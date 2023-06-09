@@ -24,40 +24,40 @@ Import Examples:
 
     Importing an entire module:
 
-python
+``python
 
 import math
 
-# Now you can use functions from the math module
+Now you can use functions from the math module
 print(math.sqrt(16))
 
     Importing specific functions from a module:
 
-python
+``python
 
 from math import sqrt, sin
 
-# Now you can use sqrt() and sin() directly
+Now you can use sqrt() and sin() directly
 print(sqrt(16))
 print(sin(0.5))
 
     Importing a module with an alias:
 
-python
+``python
 
 import numpy as np
 
-# Now you can use numpy functions using np as the alias
+Now you can use numpy functions using np as the alias
 array = np.array([1, 2, 3])
 print(array)
 
     Importing all functions from a module:
 
-python
+``python
 
 from math import *
 
-# Now you can use all functions from the math module directly
+Now you can use all functions from the math module directly
 print(sqrt(16))
 print(sin(0.5))
 print(cos(0.5))
