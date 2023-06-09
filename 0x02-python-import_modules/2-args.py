@@ -8,6 +8,6 @@ if __name__ == "__main__":
     elif le == 1:
         print(f"{le} argument:")
     else:
-        print(f"{le} argument:")
+        print(f"{le} arguments:")
     for i in range(1, le + 1):
         print(f"{i}: {argv[i]}")
