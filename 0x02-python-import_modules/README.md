@@ -16,7 +16,7 @@
 
 🔸 **`__name__` Variable:** Helps differentiate between running a module directly or importing it.
 
-```python
+``python
 if __name__ == "__main__":
     # Code executed when the module is run directly
     pass
