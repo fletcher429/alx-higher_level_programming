@@ -23,43 +23,22 @@ if __name__ == "__main__":
 Import Examples:
 
     Importing an entire module:
+## Import Examples
 
-``python
+### Importing an entire module:
 
+```python
 import math
 
-Now you can use functions from the math module
+# Now you can use functions from the math module
 print(math.sqrt(16))
 
-    Importing specific functions from a module:
+# Importing specific functions from a module
 
-``python
-
+```python
 from math import sqrt, sin
 
-Now you can use sqrt() and sin() directly
+# Now you can use sqrt() and sin() directly
 print(sqrt(16))
 print(sin(0.5))
 
-    Importing a module with an alias:
-
-``python
-
-import numpy as np
-
-Now you can use numpy functions using np as the alias
-array = np.array([1, 2, 3])
-print(array)
-
-    Importing all functions from a module:
-
-``python
-
-from math import *
-
-Now you can use all functions from the math module directly
-print(sqrt(16))
-print(sin(0.5))
-print(cos(0.5))
-
-⭐ Understanding different import methods allows you to leverage external functionality efficiently and write cleaner Python code. 🐍✨
