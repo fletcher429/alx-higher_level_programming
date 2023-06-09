@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Check if Git is installed
+if ! command -v git &> /dev/null; then
+    echo "Git is not installed. Please install Git and try again."
+    exit 1
+fi
+
+# Check if the user is in a Git repository
+if ! git rev-parse --is-inside-work-tree &> /dev/null; then
+    echo "Not in a Git repository. Please navigate to a Git repository and try again."
+    exit 1
+fi
+
+# Check if there are any changes to commit
+if git status --porcelain | grep -q '^.\|A\|M\|R'; then
+    echo "There are uncommitted changes. Adding all files to commit."
+    git add .
+fi
+
+# Prompt for commit message
+read -p "Enter the commit message: " commit_message
+
+# Commit the changes
+git commit -m "$commit_message"
+
+# Push the commit to the remote repository
+git push origin HEAD
+
+# Check if the push was successful
+if [ $? -eq 0 ]; then
+    echo "Commit pushed successfully to GitHub."
+else
+    echo "Failed to push the commit to GitHub."
+    exit 1
+fi
