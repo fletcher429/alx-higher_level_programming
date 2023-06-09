@@ -16,7 +16,7 @@
 
 🔸 **`__name__` Variable:** Helps differentiate between running a module directly or importing it.
 
-```python
+``python
 if __name__ == "__main__":
     # Code executed when the module is run directly
     pass
@@ -24,7 +24,7 @@ Import Examples:
 
     ### Importing an entire module:
 
-```python
+``python
 
 import math
 
@@ -33,7 +33,7 @@ print(math.sqrt(16))
 
     Importing specific functions from a module:
 
-```python
+``python
 
 from math import sqrt, sin
 
@@ -43,7 +43,7 @@ print(sin(0.5))
 
     Importing a module with an alias:
 
-```python
+``python
 
 import numpy as np
 
