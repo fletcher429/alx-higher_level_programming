@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 from calculator_1 import sub, mul, div, add
 
 a = 10
