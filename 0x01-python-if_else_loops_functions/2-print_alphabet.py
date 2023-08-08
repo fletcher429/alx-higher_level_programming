@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for asci in range(ord('a'), ord('z') + 1):
-    print(f"{chr(asci)}", end="")
+    print("{}".format(chr(asci)), end="")
