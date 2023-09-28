@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    matrix_sqrt = list(map(lambda row: list(map(lambda x: x * x, row)), matrix))
-    return matrix_sqrt
+    mat = list(map(lambda row: list(map(lambda x: x * x, row)), matrix))
+    return mat
