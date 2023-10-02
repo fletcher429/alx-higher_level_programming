@@ -68,11 +68,11 @@ class Rectangle:
         Define the __str__ to print the rectangle
     """
     def __str__(self):
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         print_rec = ""
 
-        for _ in range(self.height):
-            print_rec += "#" * self.width + "\n"
+        for _ in range(self.__height):
+            print_rec += "#" * self.__width + "\n"
 
         return print_rec.rstrip()
