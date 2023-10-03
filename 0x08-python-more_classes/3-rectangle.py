@@ -1,15 +1,16 @@
 #!/usr/bin/python3
+"""Defines a Rectangle class."""
+
+
 class Rectangle:
-    """
-    Initialize the attributes of the class
-    """
+    """Represent a rectangle."""
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
     """
-        Use the getter method to get the width attributes
+        Gets the attributes of the width
     """
 
     @property
@@ -17,7 +18,8 @@ class Rectangle:
         return self.__width
 
     """
-        Use the setter method to access and control the width attribute
+        Manipulate the widht attributes using the setter method
+
     """
 
     @width.setter
@@ -26,11 +28,10 @@ class Rectangle:
             return TypeError("width must be an integer")
         elif value < 0:
             return ValueError("width must be >= 0")
-
         self.__width = value
 
     """
-        Use the getter method to get/ acces the height attribute
+        Gets the attribute of the height
     """
 
     @property
@@ -38,7 +39,7 @@ class Rectangle:
         return self.__height
 
     """
-        Use the setter method to acces and manipulate of the height attribute
+        Manipulate the height attributes using setter method
     """
 
     @height.setter
@@ -54,7 +55,7 @@ class Rectangle:
     """
 
     def area(self):
-        return self.__width * self.__height
+        return self.width * self.height
 
     """
         Define a function to calculate the perimeter of the rectangle
@@ -63,18 +64,18 @@ class Rectangle:
     def perimeter(self):
         if self.height == 0 or self.width == 0:
             return 0
-        return 2 * (self.__width + self.__height)
-
+        return 2 * (self.width + self.height)
+    
     """
-        Define the __str__ to print the rectangle
+        Use the __str__ instance to print the rectangle
+        Define the function
     """
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            return ""
+            return ("")
         print_rec = ""
 
         for _ in range(self.__height):
-            print_rec += "#" * self.__width + "\n"
-
+            print_rec += '#' * self.__width + '\n'
         return print_rec.rstrip()
