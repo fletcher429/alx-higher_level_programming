@@ -65,7 +65,7 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             return 0
         return 2 * (self.width + self.height)
-    
+
     """
         Use the __str__ instance to print the rectangle
         Define the function
@@ -73,9 +73,9 @@ class Rectangle:
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            return ("")
+            return ""
         print_rec = ""
 
         for _ in range(self.__height):
-            print_rec += '#' * self.__width + '\n'
+            print_rec += "#" * self.__width + "\n"
         return print_rec.rstrip()
