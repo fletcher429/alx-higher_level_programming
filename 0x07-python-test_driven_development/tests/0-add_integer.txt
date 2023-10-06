@@ -1,0 +1,81 @@
+================
+0-add_integer.py
+================
+
+The module defines the functions to add tgwo integers
+
+
+Usage
+======
+
+``add_integer()``
+This functions returns the sum of two values passed to it as arguments
+
+:: TEST_0 POSITIVE AND POSITIVE
+
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>>add_integer(4, 6)
+    10
+
+::
+
+    TEST _1 POSITIVE AND NEGATIVE
+
+    >> add_integer(3, -4)
+    -1
+
+
+::  
+    TEST_2 NEGATIVE AND NEGATIVE
+
+    >>> add_integer(-3, -9)
+    -12
+
+:: 
+    TEST_3 FLOATING NUMBERS
+
+    ``floats should be casted to int before the addition
+
+    >>> add_integer(2.0, 3.0)
+    5.0
+
+::
+
+    TEST_4 COMBINED FLOATING NUMBERS
+
+    >>> add_integer(4.5, 6)
+    10.5
+
+:: 
+
+    TEST_5 TEST FOR ZERO
+
+    >>> add_integer(0, 5)
+    5
+
+Non_numbers
+===========
+
+::
+
+    TEST_0 int and an string
+
+    >>> add_integer(2, david)
+    Traceback (most recent call)
+    TypeError: a must be int
+
+::
+
+    TEST_1 string and int
+
+    >>> add_integer(david, 2)
+    Traceback (most recent call)
+    TypeError: a must be int
+
+::
+    TEST_2 NO arguments
+
+    >>> add_integer():
+    Traceback (most recent call)
+    TypeError: a must be int 
