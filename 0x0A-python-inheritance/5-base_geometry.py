@@ -3,5 +3,10 @@
     Define an empty class called BaseGeometry
 """
 
+
 class BaseGeometry:
+    """
+    Represents the empty class
+    """
+
     pass
