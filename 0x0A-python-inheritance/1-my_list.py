@@ -10,9 +10,8 @@ class MyList(list):
     """
 
     def __init__(self):
-
         """
-            initiliaze the object to inherit the base
+        initiliaze the object to inherit the base
         """
         super().__init__()
 
