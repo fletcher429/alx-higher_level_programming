@@ -9,6 +9,6 @@ def read_file(filename=""):
     """
     opens the file in read only mode
     """
-    with open(filename, "r", encoding='UTF-8') as f:
+    with open(filename, encoding="UTF-8") as f:
         item = f.read()
-    print(item)
+    print(item, end="")
