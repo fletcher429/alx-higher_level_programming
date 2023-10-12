@@ -1,12 +1,7 @@
 #!/usr/bin/python3
-"""
-    IMPORT SYS MOUDLE
-"""
 import sys
-"""
-    IMPORT SIGNAL MODULE
-"""
 import signal
+import datetime
 
 # Initialize variables to store metrics
 total_file_size = 0
@@ -23,6 +18,7 @@ status_code_counts = {
 
 line_count = 0
 
+
 # Define a handler for keyboard interruption (Ctrl+C)
 def interrupt_handler(signum, frame):
     print("Total file size:", total_file_size)
@@ -30,6 +26,7 @@ def interrupt_handler(signum, frame):
         if count > 0:
             print(f"{code}: {count}")
     sys.exit(0)
+
 
 # Set up the signal handler
 signal.signal(signal.SIGINT, interrupt_handler)
@@ -39,10 +36,13 @@ try:
         line = line.strip()
         parts = line.split()
         if len(parts) == 7:
-            status_code = int(parts[-2])
-            file_size = int(parts[-1])
-            total_file_size += file_size
-            status_code_counts[status_code] += 1
+            try:
+                status_code = int(parts[-2])
+                file_size = int(parts[-1])
+                total_file_size += file_size
+                status_code_counts[status_code] += 1
+            except ValueError:
+                pass  # Ignore lines that do not match the input format
 
         line_count += 1
 
