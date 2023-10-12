@@ -9,12 +9,24 @@ def append_after(filename="", search_string="", new_string=""):
         new_string (str): The line of text to insert after lines containing search_string.
     """
     lines_to_append = []
+    """
+        use open to read and close file safely
+    """
 
     with open(filename, "r") as file:
+        """
+        use the readline function
+        """
         lines = file.readlines()
 
     with open(filename, "w") as file:
+        """
+        implement the open function
+        """
         for line in lines:
+            """ "
+            write to the function
+            """
             file.write(line)
             if search_string in line:
                 file.write(new_string)
