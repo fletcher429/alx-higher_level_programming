@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+    import json module
+"""
 import json
 """
     Define a function that writes to a json file
