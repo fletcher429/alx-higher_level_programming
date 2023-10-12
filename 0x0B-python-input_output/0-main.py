@@ -1,28 +1,15 @@
 #!/usr/bin/python3
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
+import random
+import sys
+from time import sleep
+import datetime
 
-filename = "my_list.json"
-my_list = load_from_json_file(filename)
-print(my_list)
-print(type(my_list))
-
-filename = "my_dict.json"
-my_dict = load_from_json_file(filename)
-print(my_dict)
-print(type(my_dict))
-
-try:
-    filename = "my_set_doesnt_exist.json"
-    my_set = load_from_json_file(filename)
-    print(my_set)
-    print(type(my_set))
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    filename = "my_fake.json"
-    my_fake = load_from_json_file(filename)
-    print(my_fake)
-    print(type(my_fake))
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+for i in range(10000):
+    sleep(random.random())
+    sys.stdout.write("{:d}.{:d}.{:d}.{:d} - [{}] \"GET /projects/260 HTTP/1.1\" {} {}\n".format(
+        random.randint(1, 255), random.randint(1, 255), random.randint(1, 255), random.randint(1, 255),
+        datetime.datetime.now(),
+        random.choice([200, 301, 400, 401, 403, 404, 405, 500]),
+        random.randint(1, 1024)
+    ))
+    sys.stdout.flush()
