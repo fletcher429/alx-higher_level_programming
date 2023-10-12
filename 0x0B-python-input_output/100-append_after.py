@@ -1,9 +1,7 @@
 #!/usr/bin/python3
+""""
+defines a function
 """
-import os module
-"""
-import os
-
 
 def append_after(filename="", search_string="", new_string=""):
     """
