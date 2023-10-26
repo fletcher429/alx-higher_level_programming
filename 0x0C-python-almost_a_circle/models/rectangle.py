@@ -135,8 +135,10 @@ class Rectangle(Base):
         use a loop to iterate through the height and in each
         it prints '#' * width
         """
-        for x in range(self.__height):
-            print("#" * self.__width)
+        for _ in range(self.__y):
+            print()
+        for _ in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
 
     """
             Update the class Rectangle by overriding the __str__ method
