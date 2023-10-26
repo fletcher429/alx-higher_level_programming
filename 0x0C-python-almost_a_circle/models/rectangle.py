@@ -125,3 +125,15 @@ class Rectangle(Base):
         returns the area of the rectangle
         """
         return self.__width * self.__height
+
+    """
+        a function that prints the triangle using the '#' symbol'
+    """
+
+    def display(self):
+        """
+        use a loop to iterate through the height and in each
+        it prints '#' * width
+        """
+        for x in range(self.__height):
+            print("#" * self.__width)
