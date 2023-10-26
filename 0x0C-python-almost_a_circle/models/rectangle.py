@@ -15,9 +15,9 @@ class Rectangle(Base):
         Args:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
-            x (int, optional): The x-coordinate of the rectangle (default is 0).
-            y (int, optional): The y-coordinate of the rectangle (default is 0).
-            id (int, optional): The unique identifier for the rectangle (default is None).
+            x (int, optional): The x-coordinate of the rec
+            y (int, optional): The y-coordinate of the rec
+            id (int, optional): The unique identifier for the rec
         """
         super().__init__(id)  # Call the constructor of the base class with id
         self.width = width
