@@ -53,28 +53,28 @@ Adding int and 0
 
 Negative Test
 -------------
-Adding an int and a string
+
+# Adding an int and a string, expecting a TypeError
 >>> add_integer("School", 3)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
-Adding an int and a string
+# Adding an int and a string, expecting a TypeError
 >>> add_integer(4, "School")
 Traceback (most recent call last):
 TypeError: b must be an integer
 
-
-Adding non int on both arguments
+# Adding non int on both arguments, expecting a TypeError
 >>> add_integer("hello", "world")
 Traceback (most recent call last):
 TypeError: a must be an integer
 
-Adding none
+# Adding None, expecting a TypeError
 >>> add_integer(None)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
-Adding infinity
+# Adding infinity, expecting an OverflowError
 >>> add_integer(2, float('inf'))
 Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
