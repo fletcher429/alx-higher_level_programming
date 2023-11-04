@@ -43,6 +43,14 @@ Testing negative float number and a positive float number
 >>> add_integer(-2.4, 8)
 6
 
+Adding 0 and an int
+>>> add_integer(0, 76)
+76
+
+Adding int and 0
+>>> add_integer(76, 0)
+76
+
 Negative Test
 -------------
 Adding an int and a string

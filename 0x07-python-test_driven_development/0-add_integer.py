@@ -3,10 +3,11 @@
     Define a function to add two numbers
 """
 
+
 def add_integer(a, b=98):
     """
-        returns the add of two ints a and b
-        are casted into integers
+    returns the add of two ints a and b
+    are casted into integers
     """
 
     if not isinstance(a, (int, float)):
