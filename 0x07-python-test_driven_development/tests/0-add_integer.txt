@@ -50,6 +50,11 @@ Adding an int and a string
 Traceback (most recent call last):
 TypeError: a must be an integer
 
+Adding an int and a string
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
 
 Adding non int on both arguments
 >>> add_integer("hello", "world")
