@@ -1,15 +1,28 @@
 #!/usr/bin/python3
 """
-Create a class named Base
+This is the Base module, which defines the Base class.
 """
+
+
 class Base:
-    __nb_objects = 0
     """
-    class constructor
+    Represents the Base class.
+
+    Attributes:
+        __nb_objects (int): Class attribute to keep track of the number of objects created.
+        id (int): Unique identifier for the object.
     """
+
     def __init__(self, id=None):
         """
-        checks for the conditions
+        Initializes a new instance of the Base class.
+
+        Args:
+            id (int, optional): The unique identifier. Defaults to None.
+
+        Conditions:
+            - If id is provided, it is used as the object's id.
+            - If id is not provided, a new unique id is generated.
         """
         if id is not None:
             self.id = id
