@@ -1,17 +1,22 @@
 #!/usr/bin/python3
+
+
 """
 This is the Base module, which defines the Base class.
 """
 
 
 class Base:
+
     """
     Represents the Base class.
 
     Attributes:
-        __nb_objects (int): Class attribute to keep track of the number of objects created.
+        __nb_objects (int): Class attribute to keep track
         id (int): Unique identifier for the object.
     """
+
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """
