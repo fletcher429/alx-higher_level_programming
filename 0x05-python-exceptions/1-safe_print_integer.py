@@ -1,4 +1,4 @@
-# /usr/bin/python3
+#!/usr/bin/python3
 def safe_print_integer(value):
     """
     Try to print the integer
