@@ -1,10 +1,13 @@
 # /usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    """
-    Print elements in a list
-    
-    ARGS - My_list[] where the items to printed are on
-    x - number of elements in the list
+    """Print elements in a list.
+
+    Args:
+        My_list[] where the items to printed are on
+    x:
+        number of elements in the list
+    Returns:
+        Succesfull print
     """
     succes_print = 0
     for i in range(x):
@@ -19,3 +22,4 @@ def safe_print_list(my_list=[], x=0):
             break
     print("")
     return succes_print
+
