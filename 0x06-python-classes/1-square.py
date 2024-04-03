@@ -8,6 +8,7 @@ class Square:
     """
         The class reprsesents a square object
     """
+
     def __init__(self, size):
         """
         Private instance of size
