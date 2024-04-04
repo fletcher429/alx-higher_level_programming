@@ -1,0 +1,54 @@
+
+::
+===================
+POSITIVE TEST
+===================
+>>> add_integer = __import__('0-add_integer').add_integer
+
+    # adding a 2 positive numbers
+    >>> add_integer(10, 11)
+    21
+    
+    # adding two positive inetgers
+    >>> add_integer(8, 11)
+    19
+
+    # adding a = Zero and one natural number
+
+    >>> add_integer(0, 10)
+    10
+
+    # adding b = zero with natural number b
+
+    >>> add_integer(10, 0)
+    10
+
+    # adding one negative
+
+    >>> add_integer(-1, 8)
+    7
+    
+    # adding two negatives
+
+    >>> add_integer(-6, -6)
+    -12
+
+    # adding zero and negative
+    >>> add_integer(0, -1)
+    -1
+
+    # adding float and and an inetger
+    >>> add_integer(8.9, 2)
+    10
+
+    # adding a negative float with a positive float
+    >>> add_integer(-3.2, 10)
+    7
+
+    # adding a negative float with a negative float
+    >>> add_integer(-3.2, -3.2)
+    -6
+
+    # adding a float with a zero
+    >>> add_integer(0, 3.2)
+    3

@@ -22,5 +22,6 @@ def add(a, b)
 > > > 12
 > > > add(7, 8)
 > > > 15
+adding string and string
 
 return (a + b)
