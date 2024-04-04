@@ -9,3 +9,23 @@
 
 
 
+ - A fucntion to add 2 digits
+
+def add(a, b):
+    return a + b
+
+- let us the write the test using docsting/doctest
+
+"""
+Add two integers
+"""
+def add(a, b)
+>>> add (6 + 6)
+>>> 12
+>>> add(7, 8)
+>>> 15
+
+return (a + b)
+
+
+
