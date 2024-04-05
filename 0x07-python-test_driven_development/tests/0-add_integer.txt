@@ -52,3 +52,182 @@ POSITIVE TEST
     # adding a float with a zero
     >>> add_integer(0, 3.2)
     3
+
+    ==============
+    NEGATIVE TEST
+    ==============
+    # adding a string and integer
+    >>> add_integer('david', 6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a string and a float
+    >>> add_integer("David", 3.2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    #adding a tuple and an intger
+    >>> add_integer((2,3), 4)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    #adding a empty tuple with an integer
+    >>> add_integer((), 67)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a tuple to a negative integer
+    >>> add_integer(-6, (4, 9))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    # adding a tuple to a float
+    >>> add_integer(4.6, (7, 8))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+
+        # adding an empty string to an integer
+    >>> add_integer("", 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a string representation of a number to an integer
+    >>> add_integer("10", 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding None to an integer
+    >>> add_integer(None, 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a list to an integer
+    >>> add_integer([1, 2, 3], 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a dictionary to an integer
+    >>> add_integer({"a": 1, "b": 2}, 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a boolean to an integer
+    >>> add_integer(True, 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding an integer to a string
+    >>> add_integer(5, "test")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    # adding an integer to None
+    >>> add_integer(5, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    # adding an integer to a list
+    >>> add_integer(5, [1, 2, 3])
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    # adding an integer to a dictionary
+    >>> add_integer(5, {"a": 1, "b": 2})
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    # adding an integer to a boolean
+    >>> add_integer(5, False)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    # adding a float to a string
+    >>> add_integer(5.6, "test")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a float to None
+    >>> add_integer(5.6, None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a float to a list
+    >>> add_integer(5.6, [1, 2, 3])
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a float to a dictionary
+    >>> add_integer(5.6, {"a": 1, "b": 2})
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a float to a boolean
+    >>> add_integer(5.6, False)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a string to a float
+    >>> add_integer("test", 5.6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding None to a float
+    >>> add_integer(None, 5.6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a list to a float
+    >>> add_integer([1, 2, 3], 5.6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a dictionary to a float
+    >>> add_integer({"a": 1, "b": 2}, 5.6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a boolean to a float
+    >>> add_integer(False, 5.6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a string to None
+    >>> add_integer("test", None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding None to a string
+    >>> add_integer(None, "test")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a list to None
+    >>> add_integer([1, 2, 3], None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding None to a list
+    >>> add_integer(None, [1, 2, 3])
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a dictionary to None
+    >>> add_integer({"a": 1, "b": 2}, None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding None to a dictionary
+    >>> add_integer(None, {"a": 1, "b": 2})
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    # adding a boolean to None
+    >>> add_integer(False, None)
+    1
+
+    # adding None to a boolean
+    >>> add_integer(None, False)
+    1
+
+

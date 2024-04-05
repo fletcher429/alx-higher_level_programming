@@ -21,10 +21,8 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     # casting both arguments into integers
     # returning the sum
+
+  
     return (int(a) + int(b))
 
-
-#a = -3.2
-#b = -3.2
-
-#print(add_integer(a, b))
+print(add_integer(True, False))

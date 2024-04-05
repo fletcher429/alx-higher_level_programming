@@ -1,0 +1,324 @@
+    # Function to divide matrix by divide
+
+    # dividing a matrix with all elements zero
+    >>> matrix = [
+    ...     [0, 0, 0],
+    ...     [0, 0, 0]    
+    ... ]
+    >>> print(matrix_divided(matrix,3))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+    # divided a 2 row matrix with a div
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,3))
+    [[3.33, 1.67, 2.67], [4.33, 5.0, 5.33]]
+
+    # dividing a 2 row matrix with a negative div
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,-3))
+    [[-3.33, -1.67, -2.67], [-4.33, -5.0, -5.33]]
+
+    # dividing a 3 row matrix with a positive intger
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16],
+    ...     [10, 40, 20]    
+    ... ]
+    >>> print(matrix_divided(matrix, 5))
+    [[2.0, 1.0, 1.6], [2.6, 3.0, 3.2], [2.0, 8.0, 4.0]]
+
+    # adding 4 row matrix with an int
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16],
+    ...     [10, 40, 20],
+    ...     [12, 34, 10]   
+    ... ]
+    >>> print(matrix_divided(matrix, 5))
+    [[2.0, 1.0, 1.6], [2.6, 3.0, 3.2], [2.0, 8.0, 4.0], [2.4, 6.8, 2.0]]
+
+    # dividing a 2 row matrix with a float
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,0.3))
+    [[33.33, 16.67, 26.67], [43.33, 50.0, 53.33]]
+
+    # dividing a matrix with a negative float
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,-0.3))
+    [[-33.33, -16.67, -26.67], [-43.33, -50.0, -53.33]]
+
+    # dividing a matrix with True
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,True))
+    [[10.0, 5.0, 8.0], [13.0, 15.0, 16.0]]
+
+    # div a matrix with negative div of int
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,-6))
+    [[-1.67, -0.83, -1.33], [-2.17, -2.5, -2.67]]
+
+    # dividing matrix with infinity
+
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,float('inf')))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+    # NEGATIVE TEST
+    # divided a matric with a 0
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    # dividing matrix with False
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,False))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    # dividing a matrix with a tuple
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,(3, 4)))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+    
+    # dividing a matrix with a dictionary
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,{3, 5, 6, 8}))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing matrix with a list
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,[1,2,3,4,5,5]))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing a a matrix with row not equal
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,3))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    # dividing a matrix with a string
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,"david"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing matrix with None
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,None))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing an empty matrix
+        # Function to divide matrix by divide
+
+    # divided a 2 row matrix with a div
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,3))
+    [[3.33, 1.67, 2.67], [4.33, 5.0, 5.33]]
+
+    # dividing a 2 row matrix with a negative div
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,-3))
+    [[-3.33, -1.67, -2.67], [-4.33, -5.0, -5.33]]
+
+    # dividing a 3 row matrix with a positive intger
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16],
+    ...     [10, 40, 20]    
+    ... ]
+    >>> print(matrix_divided(matrix, 5))
+    [[2.0, 1.0, 1.6], [2.6, 3.0, 3.2], [2.0, 8.0, 4.0]]
+
+    # adding 4 row matrix with an int
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16],
+    ...     [10, 40, 20],
+    ...     [12, 34, 10]   
+    ... ]
+    >>> print(matrix_divided(matrix, 5))
+    [[2.0, 1.0, 1.6], [2.6, 3.0, 3.2], [2.0, 8.0, 4.0], [2.4, 6.8, 2.0]]
+
+    # dividing a 2 row matrix with a float
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,0.3))
+    [[33.33, 16.67, 26.67], [43.33, 50.0, 53.33]]
+
+    # dividing a matrix with a negative float
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,-0.3))
+    [[-33.33, -16.67, -26.67], [-43.33, -50.0, -53.33]]
+
+    # dividing a matrix with True
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,True))
+    [[10.0, 5.0, 8.0], [13.0, 15.0, 16.0]]
+
+    # div a matrix with negative div of int
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,-6))
+    [[-1.67, -0.83, -1.33], [-2.17, -2.5, -2.67]]
+
+    # dividing matrix with infinity
+
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,float('inf')))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+    # NEGATIVE TEST
+    # divided a matric with a 0
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    # dividing matrix with False
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,False))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    # dividing a matrix with a tuple
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,(3, 4)))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+    
+    # dividing a matrix with a dictionary
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,{3, 5, 6, 8}))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing matrix with a list
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,[1,2,3,4,5,5]))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing a a matrix with row not equal
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,3))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    # dividing a matrix with a string
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,"david"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    # dividing empty matrix 
+    >>> matrix = []
+    >>> print(matrix_divided(matrix,3))
+    Traceback (most recent call last):
+    IndexError: list index out of range
+
+    # dividing matrix with None
+    >>> matrix = [
+    ...     [10, 5, 8],
+    ...     [13, 15, 16]    
+    ... ]
+    >>> print(matrix_divided(matrix,None))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+
+    
+
+
