@@ -1,0 +1,94 @@
+# Testing Fuction printing a name
+
+
+
+# printing a normal name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("David", "Omondi")
+My name is David Omondi
+
+# Test case 1: Test with an empty first name
+>>> say_my_name("", "Smith")
+My name is  Smith
+
+# Test case 2: Test with an empty last name
+>>> say_my_name("John", "")
+My name is John 
+
+# Test case 3: Test with both empty first and last names
+>>> say_my_name("", "")
+My name is  
+
+# Test case 4: Test with all uppercase names
+>>> say_my_name("JANE", "DOE")
+My name is JANE DOE
+
+# Test case 5: Test with all lowercase names
+>>> say_my_name("jane", "doe")
+My name is jane doe
+
+# Test case 6: Test with mixed case names
+>>> say_my_name("JaNe", "DoE")
+My name is JaNe DoE
+
+# Test case 7: Test with special characters in names
+>>> say_my_name("J@n#", "$m!th")
+My name is J@n# $m!th
+
+# Test case 8: Test with very long names
+>>> say_my_name("JamesJohnJacobJingleheimerSchmidt", "SchmidtJamesJohnJacobJingleheimer")
+My name is JamesJohnJacobJingleheimerSchmidt SchmidtJamesJohnJacobJingleheimer
+
+# Test case 9: Test with numeric names
+>>> say_my_name("123", "456")
+My name is 123 456
+
+# Test case 10: Test with None values
+>>> say_my_name(None, "John")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Testing with second argument as None
+>>> say_my_name("John", None)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Testing with Last_name being int
+>>> say_my_name("John", 1)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Testing with first_name as an int
+>>> say_my_name(4, "Jame")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Testing with first_name float
+>>> say_my_name(4.5, "Jame")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Testing with last_name float
+>>> say_my_name("James", 8.6)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Testing with Last name tuple
+>>> say_my_name("James", (3,5))
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Testing with first_name as a tuple
+>>> say_my_name((8,6), "John")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+
+
+
+
+
+
+
+
+
