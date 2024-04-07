@@ -10,9 +10,3 @@ def print_square(size):
         print("#" * size) 
         if size == 0:
             print()
-print_square(4)
-print("-----------")
-print_square(0)
-print("------------")
-print_square(1)
-print_square(20)
