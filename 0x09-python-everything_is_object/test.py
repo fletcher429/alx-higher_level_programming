@@ -1,4 +1,3 @@
-a = 89
-b = a + 1
-print(a is b)
-print(id(a) == id(b))
+s1 = "Best School"
+s2 = s1
+print(s1 == s2)
