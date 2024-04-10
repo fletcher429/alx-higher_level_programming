@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
-    A class rectangle
+    create a class rectangle
 """
 class Rectangle:
+    """
+        An empty class rectanle
+        does nothing
+    """
     pass
