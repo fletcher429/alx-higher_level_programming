@@ -2,6 +2,8 @@
 """
 defines a function that writes to the file
 """
+
+
 def write_file(filename="", text=""):
     """
     using with open to effectively close the file after use to avoid the leaks
